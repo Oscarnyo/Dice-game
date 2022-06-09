@@ -3,7 +3,7 @@ let player1Score = 0
 let player2Score = 0
 let player1Turn = true
 
-// Create variables to store references to the necessary DOM nodes     
+// Create variables to store references to the necessary DOM nodes
 const player1Dice = document.getElementById("player1Dice")
 const player2Dice = document.getElementById("player2Dice")
 const player1Scoreboard = document.getElementById("player1Scoreboard")
@@ -11,6 +11,8 @@ const player2Scoreboard = document.getElementById("player2Scoreboard")
 const message = document.getElementById("message")
 const rollBtn = document.getElementById("rollBtn")
 const resetBtn = document.getElementById("resetBtn")
+
+
 
 function showResetButton() {
     rollBtn.style.display = "none"
@@ -65,3 +67,8 @@ function reset() {
     player2Dice.classList.remove("active")
     player1Dice.classList.add("active")
 }
+
+document.getElementById("play").addEventListener("click", function(){
+    document.getElementById("frontPage").style.display = "none" 
+    document.querySelector(".container").style.display = "block"
+ })

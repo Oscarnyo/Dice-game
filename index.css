@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 html, body { 
     --color-1: #a8e6cf;
     --color-2: #dcedc1; 
@@ -11,12 +12,43 @@ html, body {
 body {
     padding-top: 50px;
     background-image: linear-gradient(135deg, var(--color-1) , var(--color-2));
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Kdam Thmor Pro', sans-serif;
     height: 100vh;
     color: black;
 }
 
+.frontPage{
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--color-3);
+    max-width: 400px;
+    max-height: 400px;
+    padding: 50px; 
+    border-radius: 40px;
+    margin-top: 100px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.frontPage h1{
+    color: rgb(74, 73, 73);   
+}
+
+#play{
+    background-color: var(--color-5);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#play:hover{
+    background-color: #f9747d;
+}
+
+#play:active{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    transform: translateY(3px);
+}
+
 .container {
+    display: none;
     width: 400px;
     text-align: center;
     margin: 0 auto;
@@ -50,12 +82,26 @@ button {
     font-size: 20px;
     margin: 40px auto;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
 #rollBtn {
     background-color: var(--color-5);
+}
+
+#rollBtn, #resetBtn{
+    box-shadow: 0 5px rgb(199, 110, 110);
+}
+
+#rollBtn:hover, #resetBtn:hover{
+    background-color: #f39ba1;
+}
+
+#rollBtn:active, #resetBtn:active{
+    background-color: #d38282;
+    box-shadow: 0 5px rgb(196, 128, 128);
+    transform: translateY(3px);
 }
 
 #resetBtn {
