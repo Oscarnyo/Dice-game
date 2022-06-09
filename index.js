@@ -3,7 +3,7 @@ let player1Score = 0
 let player2Score = 0
 let player1Turn = true
 
-// Create variables to store references to the necessary DOM nodes
+// Create variables to store references to the necessary DOM nodes     
 const player1Dice = document.getElementById("player1Dice")
 const player2Dice = document.getElementById("player2Dice")
 const player1Scoreboard = document.getElementById("player1Scoreboard")
