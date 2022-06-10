@@ -69,6 +69,13 @@ function reset() {
 }
 
 document.getElementById("play").addEventListener("click", function(){
-    document.getElementById("frontPage").style.display = "none" 
-    document.querySelector(".container").style.display = "block"
+    startGame()
  })
+ 
+const frontPage = document.querySelector(".frontPage")
+const container = document.querySelector(".container")
+
+function startGame() {
+     frontPage.style.display = "none"
+     container.style.display = "block"
+}
